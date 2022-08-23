@@ -30,12 +30,44 @@ body {
 }
 .container {
   width: 100%;
+  position: relative;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
+.centered {
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.top-right {
+  position: absolute;
+  top: 1.5rem;
+  left: 2rem;
+}
+.small-screen {
+  img {
+    height: 100vh;
+    object-fit: cover;
+  }
+}
+
+.medium-screen {
+  img {
+    height: 100vh;
+    object-fit: cover;
+  }
+  display: none;
+}
 @media (min-width: 576px) {
+  .small-screen {
+    display: none;
+  }
+  .medium-screen {
+    display: block;
+  }
   .container {
     width: 540px;
   }
@@ -62,4 +94,13 @@ body {
 .center {
   justify-content: center;
   align-items: center;
+}
+.mt-1 {
+  margin-top: 1.5rem;
+}
+.mt-2 {
+  margin-top: 2.5rem;
+}
+.mt-3 {
+  margin-top: 3.5rem;
 }
