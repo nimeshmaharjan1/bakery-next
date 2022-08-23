@@ -1,3 +1,11 @@
+@import "~antd/dist/antd.css";
+:root {
+  --bg: #0a0a0a;
+  --bg-menu: #000000;
+  --menu-text: #2b2b2b;
+  --menu-text-hover: #ffffff;
+}
+
 html,
 body {
   padding: 0;
@@ -15,12 +23,43 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+body {
+  color: white;
+  background: var(--bg);
+  height: 100%;
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
   }
-  body {
-    color: white;
-    background: black;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
   }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+.row {
+  display: flex;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
 }
