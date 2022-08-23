@@ -41,6 +41,7 @@ const Home: NextPage = () => {
             ></MenuOutlined>
           </Col>
         </Row>
+        <h1 className="hero-title">Pâtisserie</h1>
       </main>
       <Menu isMenuOpen={isMenuOpen} updateIsMenuOpen={openMenu}></Menu>
     </div>
