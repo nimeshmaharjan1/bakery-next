@@ -1,19 +1,28 @@
 import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
-import { Product } from "../../models/data";
+import { Product } from "../../pages/products/[id]";
 import styles from "./ProductCard.module.scss";
 interface Props {
   product: Product;
 }
+
 const ProductCard: React.FC<Props> = ({ product }) => {
+  const router = useRouter();
+  const goToProduct = (e: any, id: string) => {
+    e.preventDefault();
+    router.push(`/products/${id}`);
+  };
   return (
     <div className={styles.card}>
       <Image
-        src={product.image}
-        width={240}
+        src={product.images[0].src}
+        width={220}
         height={200}
         layout="responsive"
         alt="pastry"
+        onClick={(e) => goToProduct(e, product._id)}
       ></Image>
       <div className={styles.cardTitle}>
         <h1>{product.name}</h1>
