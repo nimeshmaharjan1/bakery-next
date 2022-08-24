@@ -105,7 +105,7 @@ const Product: NextPage<Props> = ({ product }) => {
 export default Product;
 export const getServerSideProps: GetServerSideProps = async (context: any) => {
   const res = await axios.get(
-    `http://localhost:3000/api/products/${context.params.id}`
+    `https://patisserie-4q81fm22a-nimeshmaharjan1.vercel.app/api/products/${context.params.id}`
   );
   return {
     props: {
