@@ -25,6 +25,11 @@ const Layout: React.FC<Props> = ({ children }) => {
           <Col>
             <Row className="md-screen" justify="end" align="middle" gutter={34}>
               <Col>
+                <Link href="/products">
+                  <p>Products</p>
+                </Link>
+              </Col>
+              <Col>
                 <p>About</p>
               </Col>
               <Col>

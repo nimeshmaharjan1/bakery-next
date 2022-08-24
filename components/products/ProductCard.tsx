@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
-import { Product } from "../../pages/products/[id]";
+import { Product } from "../../lib/interfaces";
 import styles from "./ProductCard.module.scss";
 interface Props {
   product: Product;

@@ -1,14 +1,14 @@
 @mixin font {
-  font-family: "Montserrat";
+  font-family: "Raleway";
   padding: 0.3rem 0;
   font-size: 1rem;
   cursor: pointer;
 }
 nav {
-  .nav-links {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
+  // .nav-links {
+  //   padding-left: 2.5rem;
+  //   padding-right: 2.5rem;
+  // }
   p {
     @include font();
     padding-top: 1rem;
@@ -16,13 +16,15 @@ nav {
   h1 {
     @include font();
     font-size: 1.8rem;
-    font-weight: bold;
+    font-weight: 700;
     letter-spacing: 0.3px;
-    opacity: 0.7;
+    color: #9b6a4b;
+    margin-top: 0.2rem;
   }
   .md-screen {
     display: none;
     p {
+      font-size: 1.2rem;
       &::after {
         content: "";
         display: block;
