@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Col, Row } from "antd";
 import type { NextPage } from "next";
 import Head from "next/head";
@@ -33,7 +34,7 @@ const Home: NextPage = () => {
       <main className="medium-screen">
         <img src="/homeBg.jpeg" alt="Snow" style={{ width: "100%" }} />
         <Row justify="center">
-          <Col className="top-right ">
+          <Col className="top-left ">
             <MenuOutlined
               hidden={isMenuOpen}
               style={{ fontSize: "2rem" }}
