@@ -28,7 +28,9 @@ const Menu: NextPage<Props> = ({ isMenuOpen, updateIsMenuOpen }) => {
         <img src="/menu.jpg" alt="menu" style={{ width: "100%" }} />
       </div>
       <div className={styles.overlayContent}>
-        <Link href="/products">Products</Link>
+        <Link href="/products" passHref>
+          Products
+        </Link>
         <Link href="#">About</Link>
         <Link href="#">Services</Link>
         <Link href="#">Contact</Link>
