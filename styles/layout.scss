@@ -5,6 +5,10 @@
   cursor: pointer;
 }
 nav {
+  .nav-links {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
   p {
     @include font();
     padding-top: 1rem;
@@ -15,5 +19,29 @@ nav {
     font-weight: bold;
     letter-spacing: 0.3px;
     opacity: 0.7;
+  }
+  .md-screen {
+    display: none;
+    p {
+      &::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background: white;
+        transition: width 0.3s;
+      }
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .sm-screen {
+      display: none;
+    }
+    .md-screen {
+      display: flex;
+    }
   }
 }

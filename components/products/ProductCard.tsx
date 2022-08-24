@@ -10,7 +10,7 @@ const ProductCard: React.FC<Props> = ({ product }) => {
     <div className={styles.card}>
       <Image
         src={product.image}
-        width={280}
+        width={240}
         height={200}
         layout="responsive"
         alt="pastry"

@@ -6,6 +6,14 @@
   border-radius: 6px;
   border: 3px solid white;
   width: 320px;
+  cursor: pointer;
+  transition: 0.4s;
+  &:hover {
+    transform: scale(1.01);
+    .cardDesc p {
+      opacity: 1;
+    }
+  }
   h1 {
     color: white;
     margin: 0;
@@ -21,13 +29,15 @@
   }
   .cardDesc {
     @include borderBottom();
-    height: 227px;
+    height: 190px;
 
     p {
       text-transform: uppercase;
       margin: 0;
       font-family: "Montserrat";
-      opacity: 0.8;
+      opacity: 0.5;
+      font-size: 0.8rem;
+      transition: 0.4s;
     }
   }
   .price {

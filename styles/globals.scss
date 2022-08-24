@@ -124,6 +124,18 @@ body {
     width: 1140px;
   }
 }
+@media (min-width: 1600px) {
+  .medium-screen {
+    h1 {
+      font-size: 52px;
+      top: 6.5em;
+      left: 25em;
+    }
+  }
+  .container {
+    width: 1140px;
+  }
+}
 .row {
   display: flex;
 }
@@ -133,7 +145,7 @@ body {
   align-items: center;
 }
 .mt-1 {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 .mt-2 {
   margin-top: 2.5rem;
