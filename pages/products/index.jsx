@@ -22,10 +22,10 @@ export default function Products({ products }) {
   );
 }
 export const getServerSideProps = async () => {
-  const response = await axios.get(
+  const products = await axios.get(
     "https://patisserie-eight.vercel.app/api/products"
   );
   return {
-    props: { products: response.data.products },
+    props: { products: products.data.products },
   };
 };
