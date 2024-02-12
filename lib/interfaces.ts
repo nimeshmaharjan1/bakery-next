@@ -33,3 +33,7 @@ export interface AmountPerServing {
   sugars: string;
   protein: string;
 }
+export interface User {
+  username: string;
+  password: string;
+}
